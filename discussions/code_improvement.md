@@ -22,5 +22,7 @@ Slack Channel:#code_security
  ### Move from Javascript to Typescript
  - Transition to typescript (mix and match js and ts) for more security/quality
  - Typescript is preferred but not required: https://github.com/mojaloop/template-typescript-public
+ - The focus will be on the new code 
+ - Existing code will be selected for conversion based on priority areas of the platform and availability of resources as well
  
  
