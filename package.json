@@ -17,7 +17,8 @@
     "gitbook-plugin-theme-api": "1.1.2",
     "gitbook-plugin-uml": "1.0.1",
     "gitbook-plugin-variables": "1.1.0",
-    "svgexport": "0.3.2"
+    "svgexport": "0.3.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {},
   "scripts": {
@@ -31,7 +32,9 @@
     "docker:build": "docker build --no-cache -t mojaloop/documentation .",
     "docker:push": "docker push mojaloop/documentation",
     "docker:run": "docker run --rm -it --name mojadoc -p 8989:8989 mojaloop/documentation",
-    "express:run": "node index.js"
+    "express:run": "node index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -42,5 +45,6 @@
   "bugs": {
     "url": "https://github.com/mojaloop/documentation/issues"
   },
-  "homepage": "https://github.com/mojaloop/documentation#readme"
+  "homepage": "https://github.com/mojaloop/documentation#readme",
+  "snyk": true
 }
